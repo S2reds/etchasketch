@@ -8,7 +8,8 @@ body {
     padding: 0;
     height: 100vh;
     background-color: #a3a3a3;
-    font-family: 'Lucida Console', monospace;
+    font-family: "Lucida Console", "Courier New", monospace;
+    flex: auto;
 }
 #container {
     display: flex;
@@ -21,19 +22,29 @@ body {
 .square {
     width: 16px;
     height: 16px;
-    border: 1px solid black;
+    border: 1px solid grey;
     box-sizing: border-box;
     opacity: 0.05;
-    transition: opacity 2s ease 0.4s, transform 0.8s ease;
+    transition: opacity .2s ease 3s;
     transform: scale(1);
+    background-color: black;
 }
 
 .square:hover {
     opacity: 1;
     transition: opacity 0.2s ease;
     transform: scale(1.04);
+    background-color: black;
 }
 
 button {
+    border-radius: 10px;
+    opacity: .7;
+    padding: 5px 10px;
 
+}
+
+.hovered {
+    opacity: 1;
+    background-color: black;
 }
